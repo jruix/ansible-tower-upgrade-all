@@ -1,0 +1,7 @@
+---
+- name: Upgrade All System Packages 
+  hosts: all
+  user: root
+  tasks:
+  - name: upgrade all packages
+    yum: name=* state=latest
